@@ -1,0 +1,81 @@
+:root {
+    --color-primary: #1e1e1e;
+    --color-secondary: #2d2d30;
+    --color-ternary: #3e3e42;
+    --color-accent: #007acc;
+}
+
+body {
+    background-color: var(--color-primary);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    background-color: var(--color-secondary);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.dashboard {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.playlist {
+    width: 20%;
+    height: 90vh;
+}
+
+.playlist__card {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.playlist__card:hover {
+    background-color: var(--color-ternary);
+}
+
+.playlist__card-title {
+    font-weight: bold;
+    font-size: large;
+}
+
+.song__card {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.song__card:hover {
+    background-color: var(--color-ternary);
+}
+
+.song__card-title {
+    font-weight: bold;
+    font-size: large;
+}
+
+.song__card-action a {
+    background-color: var(--color-accent);
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.song__card-action a:hover {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.most-playing {
+    flex: 1 1 0%;
+}
+
+footer p {
+    text-align: center;
+}
